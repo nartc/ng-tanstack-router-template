@@ -1,16 +1,11 @@
 import { Component } from '@angular/core'
-import { RouterOutlet } from '@angular/router'
+import { RouterRoot } from 'tanstack-angular-router-experimental'
 
 @Component({
 	selector: 'app-root',
-	imports: [RouterOutlet],
+	imports: [RouterRoot],
 	template: `
-		<h1>Welcome to {{ title }}!</h1>
-
-		<router-outlet />
+		<RouterRoot />
 	`,
-	styles: [],
 })
-export class AppComponent {
-	title = 'ng-tanstack-router-template'
-}
+export class AppComponent {}
